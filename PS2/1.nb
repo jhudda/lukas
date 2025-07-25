@@ -1,0 +1,149 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4414,        141]
+NotebookOptionsPosition[      3712,        120]
+NotebookOutlinePosition[      4115,        136]
+CellTagsIndexPosition[      4072,        133]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Andre Lukas MM PS 2 - Q1", "Title",
+ CellChangeTimes->{{3.962436925694515*^9, 
+  3.96243694049786*^9}},ExpressionUUID->"4eb6de52-c6f9-bd4c-ba7d-\
+91e0df0d8587"],
+
+Cell["\<\
+Mainly using this one to confirm my own suspicions. Currently, will compute \
+the real standard Fourier series of a function defined on [-a, a].\
+\>", "Text",
+ CellChangeTimes->{{3.9624369447267666`*^9, 
+  3.9624370051896057`*^9}},ExpressionUUID->"49d8c2b3-53c1-0a43-807d-\
+5ef5b4eb47d0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "[", "x_", "]"}], " ", "=", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "2"}], " ", "*", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"5", "*", "x"}], "]"}]}], " ", "+", " ", "x"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Function", " ", "to", " ", "find", " ", "Fourier", " ", "series", " ", 
+     "of"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"FourierTrigSeries", "[", 
+    RowBox[{
+     RowBox[{"f", "[", "t", "]"}], ",", " ", "t", ",", " ", "5"}], "]"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"Oh", ",", " ", 
+     RowBox[{
+      RowBox[{
+      "theres", " ", "already", " ", "a", " ", "function", " ", "for", " ", 
+       "this"}], "..."}]}], "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.962437006253607*^9, 3.9624370677824287`*^9}, {
+  3.9624371012677975`*^9, 3.962437175859394*^9}, {3.9624372472850533`*^9, 
+  3.9624373082219086`*^9}, {3.962437425324108*^9, 
+  3.96243743855748*^9}},ExpressionUUID->"b4f6525b-f1a6-b74f-81ab-\
+a99805c42028"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox["2", "25"]}], "+", 
+  FractionBox[
+   RowBox[{"13", " ", 
+    RowBox[{"Cos", "[", "t", "]"}]}], "72"], "-", 
+  RowBox[{
+   FractionBox["116", "441"], " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"2", " ", "t"}], "]"}]}], "+", 
+  RowBox[{
+   FractionBox["17", "32"], " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"3", " ", "t"}], "]"}]}], "-", 
+  RowBox[{
+   FractionBox["164", "81"], " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"4", " ", "t"}], "]"}]}], "+", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", "25"], "+", 
+     FractionBox[
+      RowBox[{"2", " ", 
+       SuperscriptBox["\[Pi]", "2"]}], "3"]}], ")"}], " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"5", " ", "t"}], "]"}]}], "+", 
+  RowBox[{"2", " ", 
+   RowBox[{"Sin", "[", "t", "]"}]}], "-", 
+  RowBox[{"Sin", "[", 
+   RowBox[{"2", " ", "t"}], "]"}], "+", 
+  RowBox[{
+   FractionBox["2", "3"], " ", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"3", " ", "t"}], "]"}]}], "-", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"4", " ", "t"}], "]"}]}], "+", 
+  RowBox[{
+   FractionBox["2", "5"], " ", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"5", " ", "t"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.962437130895321*^9, {3.9624371733955383`*^9, 3.96243717620092*^9}, {
+   3.9624372516912975`*^9, 3.9624372566115227`*^9}, {3.9624372959489555`*^9, 
+   3.9624373097589912`*^9}},
+ CellLabel->"Out[14]=",ExpressionUUID->"6d37fec3-53b4-4043-983c-1d03f59e01c0"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{718.5, 741},
+WindowMargins->{{-5.25, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (March 14, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"dc10ba0b-482d-5a47-a3ed-ded6ad02e531"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 166, 3, 96, "Title",ExpressionUUID->"4eb6de52-c6f9-bd4c-ba7d-91e0df0d8587"],
+Cell[745, 27, 298, 6, 55, "Text",ExpressionUUID->"49d8c2b3-53c1-0a43-807d-5ef5b4eb47d0"],
+Cell[CellGroupData[{
+Cell[1068, 37, 1082, 28, 85, "Input",ExpressionUUID->"b4f6525b-f1a6-b74f-81ab-a99805c42028"],
+Cell[2153, 67, 1531, 49, 89, "Output",ExpressionUUID->"6d37fec3-53b4-4043-983c-1d03f59e01c0"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
